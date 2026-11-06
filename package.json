@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.109.0",
+    "openai": "^6.49.0",
+    "ws": "^8.22.1"
+  }
+}

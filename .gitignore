@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# .env file containing sensitive environment variables
+.env
+
+# Qodo build artifacts
+.qodo/

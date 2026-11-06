@@ -1,3 +1,5 @@
-import { embedding } from "./src/lessons/index.js";
+import { embedding, vectorDatabase } from "./src/lessons/index.js";
 
-console.log(embedding().data[0].embedding);
+// console.log(embedding().data[0].embedding);
+
+vectorDatabase();

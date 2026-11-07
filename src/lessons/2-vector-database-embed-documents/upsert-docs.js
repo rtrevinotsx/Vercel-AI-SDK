@@ -1,4 +1,4 @@
-import OpenAI from 'openai';
+import { openAIService } from "../../shared/index.js";
 import { supabase } from "../../../config.js"
 import {
   CLEAR_SUPABASE_TABLE_CONTENTS,
@@ -75,12 +75,7 @@ export async function ingestDocuments() {
 
 
       try {
-        const openai = new OpenAI({
-          baseURL: "http://localhost:11434/v1/",
-          apiKey: "ollama", // required but ignored
-        });
-
-        const embeddings = await openai.embeddings.create({
+        const embeddings = await openAIService.embeddings.create({
           model: EMBEDDING_MODEL_NAME,
           input: fileContent,
         });

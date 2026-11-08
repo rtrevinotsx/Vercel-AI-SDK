@@ -15,4 +15,8 @@ export const lessons = [
     title: "Vector database: text splitting and retrieval",
     load: () => import("./4-vector-database-text-splitting-and-retrieval/index.js"),
   },
+  {
+    title: "Vercel AI SDK basics",
+    load: () => import("./5-vercel-ai-sdk-basics/index.js"),
+  },
 ];

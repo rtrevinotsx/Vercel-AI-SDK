@@ -1,6 +1,7 @@
 import { ollama } from 'ollama-ai-provider-v2';
 import { basicStructuredOutput, classificationStructuredOutput } from './utils.js';
 import { ANSWERING_MODEL } from '../../shared/constants.js';
+import { default as challengeMain } from './challenge.js';
 
 const responseModel = ollama(ANSWERING_MODEL);
 
@@ -22,6 +23,8 @@ const main = async () => {
   await generateBasicOutput();
 
   await generateClassificationOutput();
+
+  // await challengeMain();
 }
 
 /**

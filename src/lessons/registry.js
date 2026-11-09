@@ -19,4 +19,8 @@ export const lessons = [
     title: "Vercel AI SDK basics",
     load: () => import("./5-vercel-ai-sdk-basics/index.js"),
   },
+  {
+    title: "Vercel AI SDK Structured Output",
+    load: () => import("./6-vercel-ai-sdk-structured-outputs/index.js"),
+  }
 ];

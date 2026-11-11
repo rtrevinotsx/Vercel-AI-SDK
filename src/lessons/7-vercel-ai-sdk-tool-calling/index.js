@@ -2,6 +2,7 @@ import { ollama } from 'ollama-ai-provider-v2';
 import { generateText, tool, stepCountIs } from 'ai';
 import { z } from 'zod';
 import { ANSWERING_MODEL } from '../../shared/index.js';
+import { default as challenge } from './challenge.js';
 
 /**
  * Tools are actions that an LLM can invoke.
@@ -18,6 +19,8 @@ const main = async () => {
   // await multipleToolCalls()
 
   await generateResponseFromToolCalls()
+
+  // await challenge();
 }
 
 /**
